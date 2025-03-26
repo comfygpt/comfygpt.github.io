@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Offcial website of 'ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation'">
+  <meta name="keywords" content="ComfyGPT, Multiagent System, Image Editing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ComfyGPT</title>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MRQC0YFE17');
+</script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <style>
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  </style>
+
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+         <a class="navbar-item" href="">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a> -->
+<!-- 
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xiaobul.github.io/LLM4GEN/">
+              LLM4GEN
+            </a>
+            <a class="navbar-item" href="https://character-adapter.github.io/">
+              Character-Adapter
+            </a>
+            <a class="navbar-item" href="https://storynizor.github.io/">
+              Storynizor
+            </a>
+            
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </nav> --> 
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        
+        <div class="container has-text-centered">
+          
+          <h1 class="title is-1 publication-title">
+            ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation
+          </h1>
+          
+          <div class="is-size-5 publication-authors">
+            <div class="author-block">
+              <a href="https://scholar.google.com/citations?user=WygzcsIAAAAJ&hl=zh-CN">Oucheng Huang</a><sup>1*</sup>,
+            </div>
+            <div class="author-block">
+              <a href="https://yuhang-ma.github.io/">Yuhang Ma</a><sup>2∗†</sup>,
+            </div>
+            <div class="author-block">
+              <a href="https://openreview.net/profile?id=~Zeng_Zhao2">Zeng Zhao</a><sup>2</sup>,
+            </div>
+            <div class="author-block">
+              <a href='https://scholar.google.com/citations?user=sbCKwnYAAAAJ&hl=zh-CN&oi=sra'>Mingrui Wu</a><sup>1</sup>
+            </div>
+            <div class="author-block">
+              <a href='https://scholar.google.com/citations?user=xp_rICcAAAAJ&hl=zh-CN&oi=sra'>Jiayi Ji</a><sup>1</sup>
+            </div>
+            <div class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=H1VQcLAAAAAJ&hl=zh-CN">Rongsheng Zhang</a><sup>2</sup>,
+            </div>
+            <div class="author-block">
+              <a href="https://openreview.net/profile?id=~Zhipeng_Hu1">Zhipeng Hu</a><sup>2</sup>,
+            </div>
+            <div class="author-block">
+              <a href='https://scholar.google.com/citations?user=KPMK3B4AAAAJ&hl=zh-CN&oi=sra'>Xiaoshuai Sun</a><sup>1✉</sup>,
+            </div>
+            <div class="author-block">
+              <a href='https://scholar.google.com/citations?user=lRSD7PQAAAAJ&hl=zh-CN&oi=sra'>Rongrong Ji</a><sup>1</sup>,
+            </div>
+            
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University </span>
+            
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>2</sup> Fuxi AI Lab, Netease Inc. </span>
+            <br>
+            <span class="author-block"><sup>*</sup> Equal Contribution </span>
+            <span class="author-block"><sup>†</sup> Project Leader </span>
+            <span class="author-block"><sup>✉</sup> Corresponding Author </span>
+
+            
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- jpg Link. -->
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.17671" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Arxiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/comfygpt/comfygpt"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <img src="./static/intro.jpg" alt="Image0" width="100%">
+        <h2 class="subtitle has-text-centered">
+          <b>ComfyGPT's workflow generation across various task instructions.</b> By leveraging its strong alignment capabilities, ComfyGPT enables users to generate diverse workflows in response to task instructions, supporting various visual tasks.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              ComfyUI provides a widely-adopted, workflow-based interface that enables users to customize various image generation tasks through an intuitive node-based architecture. However, the intricate connections between nodes and diverse modules often present a steep learning curve for users. In this paper, we introduce <b>ComfyGPT</b>, the first self-optimizing multi-agent system designed to generate ComfyUI workflows based on task descriptions automatically. ComfyGPT comprises four specialized agents: ReformatAgent, FlowAgent, RefineAgent, and ExecuteAgent. The core innovation of ComfyGPT lies in two key aspects. First, it focuses on generating individual node links rather than entire workflows, significantly improving generation precision.   Second, we proposed FlowAgent, a LLM-based workflow generation agent that uses both supervised fine-tuning (SFT) and reinforcement learning (RL) to improve workflow generation accuracy. 
+Moreover, we introduce <b>FlowDataset</b>, a large-scale dataset containing 13,571 workflow-description pairs, and <b>FlowBench</b>, a comprehensive benchmark for evaluating workflow generation systems. We also propose four novel evaluation metrics: Format Validation (FV), Pass Accuracy (PA), Pass Instruct Alignment (PIA), and Pass Node Diversity (PND). Experimental results demonstrate that ComfyGPT significantly outperforms existing LLM-based methods in workflow generation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+
+  <section class="method">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              
+          </div>
+
+          <div class="container is-max-desktop">
+            <img src="./static/framework.jpg" alt="Image0" width="100%">
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+            <b>Overview of the ComfyGPT pipeline for automated ComfyUI workflow generation.</b> Given a user instruction, ComfyGPT sequentially executes four specialized agents to construct and refine workflows for diverse visual tasks. ReformatAgent evaluates whether user queries require conversion during few-shot learning or FlowAgent training. FlowAgent, an LLM-based model trained with supervised fine-tuning (SFT) and optimized via GRPO, generates workflows and autonomously corrects errors. RefineAgent enhances workflow quality by integrating LLMs with knowledge retrieval for validation and topological consistency. Finally, ExecuteAgent converts the optimized workflow into a ComfyUI-compatible JSON format and executes it within the ComfyUI environment.
+            </p>
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/format.jpg" alt="Image0" width="60%">
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+            <b>Illustration of Different Representations of ComfyUI Workflows.</b> Instead of generating the entire JSON format ComfyUI workflows, we introduce a new workflow digram to generate individual links between the processing nodes (C).
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">FlowDataset and FlowBench</h2>
+          <div class="content has-text-justified">
+            <p>
+              To train FlowAgent, we develop a large dataset called <b>FlowDataset</b>, which contains <b>13,571 workflows and corresponding instructions, organized into six core categories and six subcategories</b>, making it the most comprehensive workflow dataset available.
+            </p>
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/benchmark.jpg" alt="Image0" width="70%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+            <b>Illustration of categories included in FlowDataset and FlowBench.</b> The left figure represents the proportion of the six categories, while right represents subcategories.
+            </p>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              To better evaluate our ComfyGPT, we partition 1,000 samples from FlowDatasets to create a test set and develop <b>FlowBench</b>. FlowBench covers a wider range of categories and more data compared to other benchmarks. FlowBench can not only be used to evaluate ComfyGPT, but it can also serve as a task benchmark for the evaluation of LLM. 
+            </p>
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/benchmark_2.jpg" alt="Image0" width="70%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+            <b>Illustration of length (left) and task categories (right) distribution in FlowBench.</b> The length is calculated by the number of nodes contained in each workflow.
+            </p>
+          </div>
+
+          <div class="container is-max-desktop">
+            <img src="./static/datasetcomparison.png" alt="Image0" width="100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <b>Comparison of task categories between our proposed dataset and others in text-to-image generation (T2I), image editing (IE), style transfer (ST), 3D generation (3DG), video generation (VG) and others (O).</b> The
+              Dataset Scale column quantifies the number of instructions,
+              workflows, and unique node types. ComfyGPT achieves
+              the most extensive task support and dataset coverage across
+              both the training set and benchmark.
+            </p>
+          </div>
+
+
+          
+
+
+        </div>
+      </div>
+
+    <div class="section">
+      <div class="container">
+        <h2 class="title has-text-centered">Workflow Generated by ComfyGPT</h3>
+        <div id="results-carousel" class="carousel results-carousel carousel-control-prev carousel-inner" data-ride="carousel">
+          <div>
+            <div class="results-item">
+              <img src="./static/diff_model.jpg", height="100%">
+            </div>
+          </div>
+  
+        <div>
+            <div class="results-item">
+              <img src="./static/example_2.jpg" alt="Image0" height="80%">
+            </div>
+          </div>
+  
+          <div>
+            <div class="results-item">
+              <img src="./static/example_1.jpg" alt="Image0" height="100%">
+            </div>
+          </div>
+          
+        </div>
+
+      <!--/ Abstract. -->
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Visulization Result</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/ability.jpg" alt="Image0" width="100%">
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/more.jpg" alt="Image0" width="100%">
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/semantic.jpg" alt="Image0" width="100%">
+          </div>
+
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Quantitative Result</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/quantitativeresult.png" alt="Image0" width="100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <b>Quantitative result of ComfyGPT and few-shot learning across different baselines.</b> This evaluation is conducted in FlowBench, focusing primarily on the four metrics: Format Validation(FV), Pass Accuracy(PA), Pass Instruct Alignment(PIA) and Pass Node Diversity(PND). To show the great performance of our ComfyGPT, quantitative results are conducted in two aspects: first, by comparing our standard ComfyGPT pipeline with the few-shot learning across various baselines. ComfyGPT achieves substantial improvements across various baselines in all metrics.
+            </p>
+          </div>
+          <div class="container is-max-desktop">
+            <img src="./static/quantitive2.png" alt="Image0" width="100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <b>Quantitative comparison result of ComfyGPT and ComfyAgent on FlowBench and ComfyBench.</b>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+  
+
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container content is-max-desktop">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{huang2025comfygptselfoptimizingmultiagentcomprehensive,
+        title={ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation}, 
+        author={Oucheng Huang and Yuhang Ma and Zeng Zhao and Mingrui Wu and Jiayi Ji and Rongsheng Zhang and Zhipeng Hu and Xiaoshuai Sun and Rongrong Ji},
+        year={2025},
+        eprint={2503.17671},
+        archivePrefix={arXiv},
+        primaryClass={cs.MA},
+        url={https://arxiv.org/abs/2503.17671}, 
+  }</code></pre>
+  </div>
+  </section>
+
+
+  <script type="text/javascript" src="./static/slick/slick.js"></script>
+</body>
+
+</html>
