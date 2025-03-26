@@ -1,1 +1,1 @@
-# storynizor.github.io
+# comfygpt.github.io
